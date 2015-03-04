@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-SY-FiL">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didTouchDateField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="AgK-ME-Ljl"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZh-ni-G0S">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="i6Q-ti-2zy"/>
+                                </constraints>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i6Q-ti-2zy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="i6Q-ti-2zy"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the day you want to count in to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XL-N2-2Eo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t2R-SY-FiL" firstAttribute="trailing" secondItem="3XL-N2-2Eo" secondAttribute="trailing" id="0gx-EL-Qmr"/>
+                            <constraint firstItem="3XL-N2-2Eo" firstAttribute="leading" secondItem="t2R-SY-FiL" secondAttribute="leading" id="3RZ-9t-3u0"/>
+                            <constraint firstItem="3XL-N2-2Eo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Bmy-RG-BXv"/>
+                            <constraint firstItem="3XL-N2-2Eo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="VbZ-zm-JP0"/>
+                            <constraint firstItem="t2R-SY-FiL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X2b-EX-eEK"/>
+                            <constraint firstItem="t2R-SY-FiL" firstAttribute="centerX" secondItem="nZh-ni-G0S" secondAttribute="centerX" id="ewK-3r-PtF"/>
+                            <constraint firstItem="nZh-ni-G0S" firstAttribute="top" secondItem="t2R-SY-FiL" secondAttribute="bottom" constant="83" id="seK-yT-wh4"/>
+                            <constraint firstItem="t2R-SY-FiL" firstAttribute="top" secondItem="3XL-N2-2Eo" secondAttribute="bottom" constant="50" id="yCk-Fj-yb2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="t2R-SY-FiL"/>
+                                <exclude reference="nZh-ni-G0S"/>
+                                <exclude reference="3XL-N2-2Eo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3RZ-9t-3u0"/>
+                                <exclude reference="Bmy-RG-BXv"/>
+                                <exclude reference="VbZ-zm-JP0"/>
+                                <exclude reference="0gx-EL-Qmr"/>
+                                <exclude reference="X2b-EX-eEK"/>
+                                <exclude reference="ewK-3r-PtF"/>
+                                <exclude reference="yCk-Fj-yb2"/>
+                                <exclude reference="seK-yT-wh4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="t2R-SY-FiL"/>
+                                <include reference="nZh-ni-G0S"/>
+                                <include reference="3XL-N2-2Eo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3RZ-9t-3u0"/>
+                                <include reference="Bmy-RG-BXv"/>
+                                <include reference="VbZ-zm-JP0"/>
+                                <include reference="0gx-EL-Qmr"/>
+                                <include reference="X2b-EX-eEK"/>
+                                <include reference="ewK-3r-PtF"/>
+                                <include reference="yCk-Fj-yb2"/>
+                                <include reference="seK-yT-wh4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="t2R-SY-FiL" id="LUO-Lk-iVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="339"/>
+        </scene>
+    </scenes>
+</document>
